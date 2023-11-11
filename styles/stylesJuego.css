@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #A28F9D;
+  }
+  
+  #trivia-container {
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-color: #5C574F;
+  }
+  
+  h2 {
+    color: #fff;
+  }
+ 
+  #question{
+    color: #fff;
+  }
+
+  .options button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor:pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+  
+  /* Estilo para resaltar la opción seleccionada */
+  .options button.selected {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+    
+  }
+  
+.responder{
+    color: #000;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+}
+  
+.responder:hover{
+    background-color: grey;
+    padding: 20px;
+    cursor: pointer;
+    
+    
+}

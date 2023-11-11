@@ -1,0 +1,305 @@
+/* Estilos generales */
+body {
+    background-color: #48483A;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% de la altura de la ventana */
+    font-weight: bold;
+}
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #A28F9D;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 240px;
+    margin-right: 20px;
+}
+
+/* Estilos para los botones de navegación */
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav-buttons a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.1s;
+    background-color: #A28F9D;
+    border-radius: 0px;
+    font-size: small;
+}
+
+.nav-buttons a:hover {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+
+
+/* Estilos para el título en la barra de navegación */
+.navbar h2 {
+    font-size: 30px;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    
+}
+
+/* Estilos para el contenedor de información */
+.container {
+    background-color: #A28F9D;
+    color: #000;
+    padding: 20px;
+    margin-top: 30px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la lista */
+.container ul {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.container ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los iconos en la lista */
+.container ul li i {
+    margin-right: 10px;
+}
+
+/* Estilos para el footer */
+/* Estilos para el footer */
+/* Estilos para el footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #DFF8EB;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    height: 30px; /* Tamaño más pequeño del footer */
+    
+}
+
+.footer p{
+    font-size: small;
+}
+
+
+/* Estilos para el contenedor dividido en dos partes */
+.container-exp {
+    display: flex;
+    justify-content: space-between;
+    border: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+/* Estilos para cada mitad del contenedor */
+.half {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #A28F9D;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/* Estilos para las imágenes en las partes */
+.experience-image {
+    width: 300px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    transition: opacity 1s;
+    margin-top: 50px;
+}
+
+/* Estilos para el contenedor dividido en cuatro partes */
+.container-comp {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* Estilos para cada una de las cuatro partes */
+.quarter {
+    flex-basis: calc(25% - 10px);
+    padding: 20px;
+    text-align: center;
+    background-color: #A28F9D;
+    height: 300px;
+    font-size: large;
+}
+
+.quarter p {
+    margin-top: 10px;
+}
+
+.quarter img {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    transition: opacity 1s;
+    margin-top: 50px;
+}
+
+/* Media queries para hacer el sitio responsive */
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas, como tablets */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+    }
+
+    .nav-buttons a {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .container ul {
+        font-size: 20px;
+    }
+
+    .half, .quarter {
+        padding: 10px;
+        height: auto;
+    }
+
+    .experience-image {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    /* Ajustar el estilo del footer y el contenedor principal para rellenar la página */
+    .container, .container-exp, .container-comp {
+        padding-bottom: 50px;
+        padding-bottom: 50px;
+        flex-grow: 1;
+    }
+    
+
+}
+
+/* Media query adicional para pantallas aún más pequeñas, como dispositivos móviles */
+@media (max-width: 480px) {
+    .nav-buttons a {
+        padding: 8px 12px;
+    }
+}
+
+/* Estilos para el contenedor principal que centra los contenedores */
+
+/* Estilos para el contenedor de información dividido en ocho partes (4x2) */
+.com-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 290px;
+}
+
+/* Estilos para los contenedores superiores (primeros 4) */
+.upper-row {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: calc(50% - 10px); /* Divide el espacio en dos columnas */
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los contenedores inferiores (últimos 4) */
+.lower-row {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: calc(50% - 10px); /* Divide el espacio en dos columnas */
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada uno de los contenedores (cuartos) */
+.quarter {
+    flex-basis: calc(50% - 10px); /* Divide el espacio en dos columnas */
+    padding: 20px;
+    text-align: center;
+    background-color: #A28F9D;
+    height: 300px;
+    font-size: large;
+}
+
+.quarter p {
+    margin-top: 10px;
+}
+
+.quarter img {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    transition: opacity 1s;
+    margin-top: 50px;
+}
+
+.uade{
+    height: 20px;
+    float: right;
+    align-items: center;
+}
